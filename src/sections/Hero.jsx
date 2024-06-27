@@ -24,7 +24,6 @@ const Hero = () => {
       pt-28"
       >
         <p className="text-xl font-montserrat text-coral-red">
-          {" "}
           Our Summer Collection
         </p>
         <h1
