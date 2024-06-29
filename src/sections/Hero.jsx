@@ -3,6 +3,8 @@ import Button from "../components/Button";
 
 // import arrowRight image
 import { useState } from "react";
+import CountUp from "react-countup";
+import { Typewriter } from "react-simple-typewriter";
 import { arrowRight } from "../assets/icons";
 import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
@@ -24,7 +26,15 @@ const Hero = () => {
       pt-28"
       >
         <p className="text-xl font-montserrat text-coral-red">
-          Our Summer Collection
+          <Typewriter
+            words={["Our Summer Collection"]}
+            loop={false}
+            cursor
+            cursorStyle="_"
+            typeSpeed={100}
+            deleteSpeed={80}
+            delaySpeed={1000}
+          />
         </p>
         <h1
           className="mt-10 font-palanquin text-8xl
@@ -52,7 +62,8 @@ const Hero = () => {
           {statistics.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-2">
               <h1 className="text-4xl font-bold font-palanquin">
-                {stat.value}
+                <CountUp end={parseInt(stat.value)} duration={5} />
+                {stat.value.replace(/[0-9]/g, "")}
               </h1>
               <p className=" text-slate-gray leading-7 font-montserrat">
                 {stat.label}

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { close, hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 
 const Nav = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleMenuToggle = () => {
     setMenuVisible(!menuVisible);
@@ -14,8 +15,27 @@ const Nav = () => {
     setMenuVisible(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed padding-x py-8 z-[11] w-full bg-white">
+    <header
+      className={`fixed padding-x py-8 z-[11] w-full transition-colors duration-300 ${
+        isScrolled ? "bg-white" : ""
+      }`}
+    >
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />

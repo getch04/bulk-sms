@@ -9,6 +9,7 @@ import {
 } from "./sections";
 
 import Nav from "./components/Nav";
+import ScrollButton from "./components/ScrollButton";
 import Hero from "./sections/Hero";
 
 const App = () => {
@@ -39,6 +40,8 @@ const App = () => {
       <section className="padding-x bg-black padding-t pb-8">
         <Footer></Footer>
       </section>
+      {/* Scroll button to scroll down or up */}
+      <ScrollButton />
     </main>
   );
 };
