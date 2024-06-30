@@ -1,48 +1,29 @@
-import {
-  CustomerReviews,
-  Footer,
-  Popular,
-  Services,
-  SpecialOffer,
-  Subscribe,
-  SuperQuality,
-} from "./sections";
+import { Footer } from "./sections";
 
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import ScrollButton from "./components/ScrollButton";
-import Hero from "./sections/Hero";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
-    <main className="relative">
+    <Router>
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b">
-        <Hero />
-      </section>
-      <section className="padding">
-        <Popular></Popular>
-      </section>
-      <section className="padding">
-        <SuperQuality></SuperQuality>
-      </section>
-      <section className="padding-x py-10">
-        <Services></Services>
-      </section>
-      <section className="padding">
-        <SpecialOffer></SpecialOffer>
-      </section>
-      <section className="padding bg-pale-blue">
-        <CustomerReviews></CustomerReviews>
-      </section>
-      <section className="padding-x sm:py-32 py-26 w-full ">
-        <Subscribe></Subscribe>
-      </section>
-      <section className="padding-x bg-black padding-t pb-8">
-        <Footer></Footer>
-      </section>
-      {/* Scroll button to scroll down or up */}
-      <ScrollButton />
-    </main>
+      <main className="relative">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <section className="padding-x bg-black padding-t pb-8">
+          <Footer />
+        </section>
+        {/* Scroll button to scroll down or up */}
+        <ScrollButton />
+      </main>
+    </Router>
   );
 };
 

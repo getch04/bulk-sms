@@ -51,6 +51,16 @@ const Nav = () => {
               </a>
             </li>
           ))}
+          <div className="rounded-full border-2 border-gray-200 py-2 px-4">
+            <li key="login/signup">
+              <a
+                href="/login"
+                className="font-montserrat text-sm text-gray-500 hover:text-gray-900"
+              >
+                Login/Signup
+              </a>
+            </li>
+          </div>
         </ul>
         <div className="hidden max-lg:block">
           <img
