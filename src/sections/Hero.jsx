@@ -6,12 +6,11 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import { Typewriter } from "react-simple-typewriter";
 import { arrowRight } from "../assets/icons";
-import { bigShoe1 } from "../assets/images";
-import ShoeCard from "../components/ShoeCard";
-import { shoes, statistics } from "../constants";
+import { mass1 } from "../assets/images";
+import { statistics } from "../constants";
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+  const [bigShoeImg, setBigShoeImg] = useState(mass1);
 
   return (
     <section
@@ -27,7 +26,7 @@ const Hero = () => {
       >
         <p className="text-xl font-montserrat text-coral-red">
           <Typewriter
-            words={["Our Summer Collection"]}
+            words={["Best In Town"]}
             loop={false}
             cursor
             cursorStyle="_"
@@ -44,16 +43,17 @@ const Hero = () => {
         "
         >
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
-            The New Arrival
+            Reach Thousands
           </span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+          <span>in </span>
+          <span className="text-coral-red inline-block mt-3">Seconds</span>
         </h1>
         <p className=" font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover stylish Nike arrivals, quality comfort, and innovation for
-          your active life.
+          Your Premier Partner for Business Messaging Solutions, Delivering
+          Efficiency and Reach.
         </p>
-        <Button label="Shop Now" iconURL={arrowRight} />
+        <Button label="Get Started" iconURL={arrowRight} />
 
         <div
           className="flex  justify-start items-start flex-wrap
@@ -72,28 +72,14 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+      <div className="relative flex-1 flex lg:justify-end items-center xl:min-h-screen max-xl:py-40 justify-center sm:py-0 bg-center">
         <img
           src={bigShoeImg}
           alt="Shoe collection"
-          height={500}
+          height={600}
           width={610}
           className="object-contain relative z-10"
         />
-
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-          {shoes.map((shoe, index) => (
-            <div key={index}>
-              <ShoeCard
-                imgURL={shoe}
-                changeBigShoeImg={(shoe1) => {
-                  setBigShoeImg(shoe1);
-                }}
-                bigShoeImg={bigShoeImg}
-              />
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

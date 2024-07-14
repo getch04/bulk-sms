@@ -12,10 +12,10 @@ import {
   bigShoe3,
   customer1,
   customer2,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
+  mass1,
+  mass2,
+  mass3,
+  mass4,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -23,9 +23,8 @@ import {
 
 export const navLinks = [
   { href: "/", label: "Home" },
+  { href: "#product", label: "Products" },
   { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
 ];
 
 export const shoes = [
@@ -44,50 +43,56 @@ export const shoes = [
 ];
 
 export const statistics = [
-  { value: "1k+", label: "Brands" },
-  { value: "500+", label: "Shops" },
-  { value: "250k+", label: "Customers" },
+  { value: "1k+", label: "Customers" },
+  { value: "500+", label: "Campaigns" },
+  { value: "250k+", label: "Message Sent" },
 ];
 
-export const products = [
+export const popularServices = [
   {
-    imgURL: shoe4,
-    name: "Nike Air Jordan-01",
-    price: "$200.20",
+    imgURL: mass1,
+    name: "Mass Text Messaging",
+    description: "Efficiently reach thousands with just one click.",
   },
   {
-    imgURL: shoe5,
-    name: "Nike Air Jordan-10",
-    price: "$210.20",
+    imgURL: mass2,
+    name: "Two-Way Messaging",
+    description: "Engage with your audience through interactive messaging.",
   },
   {
-    imgURL: shoe6,
-    name: "Nike Air Jordan-100",
-    price: "$220.20",
+    imgURL: mass3,
+    name: "Automated Scheduling",
+    description: "Schedule your campaigns for timely delivery.",
   },
   {
-    imgURL: shoe7,
-    name: "Nike Air Jordan-001",
-    price: "$230.20",
+    imgURL: mass4,
+    name: "Personalized Messaging",
+    description: "Customize messages for a personal touch.",
   },
 ];
 
 export const services = [
   {
-    imgURL: truckFast,
-    label: "Free shipping",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    imgURL: support,
+    label: "Dedicated Support",
+    subtext:
+      "Our Support Team is dedicated to helping you get your SMS messages across.",
   },
   {
     imgURL: shieldTick,
-    label: "Secure Payment",
-    subtext:
-      "Experience worry-free transactions with our secure payment options.",
+    label: "Reliable Delivery",
+    subtext: "We send your messages through the most reliable routes on offer.",
   },
   {
     imgURL: support,
-    label: "Love to help you",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
+    label: "Clear Regulations",
+    subtext:
+      "Easy access to information on industry best practices and regional regulations.",
+  },
+  {
+    imgURL: truckFast,
+    label: "Easy Access",
+    subtext: "Access all our SMS Solutions with one account.",
   },
 ];
 

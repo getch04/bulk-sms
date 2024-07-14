@@ -2,6 +2,14 @@ import bigShoe1 from './big-shoe1.png'
 import bigShoe2 from './big-shoe2.png'
 import bigShoe3 from './big-shoe3.png'
 
+import mass1 from './mass1.png'
+import mass2 from './mass2.png'
+import mass3 from './mass3.png'
+import mass4 from './mass4.png'
+
+import bulkSms from './bulk-sms.png';
+import bulkSms2 from './bulk-sms2.png';
+
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
 
@@ -25,6 +33,15 @@ export {
     bigShoe1,
     bigShoe2,
     bigShoe3,
+
+    mass1,
+    mass2,
+    mass3,
+    mass4,
+
+    bulkSms,
+    bulkSms2,
+
 
     customer1,
     customer2,

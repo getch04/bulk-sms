@@ -1,5 +1,5 @@
 //import BUTTON component
-import { shoe8 } from "../assets/images";
+import { bulkSms2 } from "../assets/images";
 import Button from "../components/Button";
 
 const SuperQuality = () => {
@@ -11,25 +11,23 @@ const SuperQuality = () => {
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg ">
           We provide you
-          <span className="text-coral-red"> Super Quality </span>Shoes
+          <span className="text-coral-red"> Super Quality </span>SMS Service
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
-          Ensuring premium confort and style, our meticulously crafted footwear
-          is designed to elevate your everyday look, providing you with the best
-          quality shoes.
+        Delivering premium communication solutions, our meticulously crafted bulk SMS service is designed to elevate your business outreach, providing you with the best messaging quality.
         </p>
 
         <p className="mt-6 info-text lg:max-w-lg">
-          Our dedication to quality ensures that you get the best product
+        Our dedication to excellence ensures that you get the best service.
         </p>
         <div className="mt-11">
           <Button label="View Details" />
         </div>
       </div>
-      <div className="flex flex-1 justify-center items-center">
+      <div className="flex flex-1 justify-center items-center bg-pale-blue">
         <img
-          src={shoe8}
-          alt="shoe8"
+          src={bulkSms2}
+          alt="bulkSms2"
           width={517}
           height={522}
           className="object-contain"

@@ -57,7 +57,7 @@ const Nav = () => {
                 href="/login"
                 className="font-montserrat text-sm text-gray-500 hover:text-gray-900"
               >
-                Login/Signup
+                Contact Us
               </a>
             </li>
           </div>
