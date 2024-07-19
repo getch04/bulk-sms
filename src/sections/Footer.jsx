@@ -7,12 +7,15 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
-          <a href="/">
-            <img src={footerLogo} alt="footer logo" width={150} height={46} />
+          <a href="/" className="flex items-center gap-2">
+            <img src={footerLogo} alt="logo" width={30} height={29} />
+            <span className="font-montserrat text-2xl bg-gradient-to-r from-white-400 to-white bg-clip-text text-transparent">
+              Bulk SMS
+            </span>
           </a>
           <p className="leading-7 mt-6 text-base font-montserrat text-white-400 sm:max-w-sm">
-            Get shoes ready for any occasion with our collection of shoes.Find
-            your perfect size in the store.
+            Get ready for any occasion with our Bulk SMS services.
+            Find the perfect solution for your needs.
           </p>
           <div className="flex items-center mt-8 gap-5">
             {socialMedia.map((item, index) => (
@@ -61,6 +64,10 @@ const Footer = () => {
           <p>Copyright. All rights reserved</p>
         </div>
         <p className="cursor-pointer font-montserrat">Terms & conditions</p>
+      </div>
+      <div className="flex justify-center items-center  text-red-400 mt-10">
+        <h4>Developed by </h4>
+        <span> Get soft</span>
       </div>
     </footer>
   );

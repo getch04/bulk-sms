@@ -26,7 +26,14 @@ const Hero = () => {
       >
         <p className="text-xl font-montserrat text-coral-red">
           <Typewriter
-            words={["Best In Town"]}
+            words={[
+              "Bulk SMS Service",
+              "The Leading In Town",
+              "Affordable Pricing",
+              "Reliable and Fast",
+              "24/7 Customer Support",
+              "Join Thousands of Satisfied Clients",
+            ]}
             loop={false}
             cursor
             cursorStyle="_"

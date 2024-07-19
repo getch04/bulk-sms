@@ -37,8 +37,11 @@ const Nav = () => {
       }`}
     >
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
-          <img src={headerLogo} alt="logo" width={130} height={29} />
+        <a href="/" className="flex items-center gap-2">
+          <img src={headerLogo} alt="logo" width={30} height={29} />
+          <span className="font-montserrat text-2xl bg-gradient-to-r from-red-800 to-orange-500 bg-clip-text text-transparent">
+            Bulk SMS
+          </span>
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item, index) => (

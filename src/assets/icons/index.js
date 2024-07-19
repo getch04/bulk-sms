@@ -25,6 +25,6 @@ export {
   star,
   support,
   truckFast,
-  twitter
+  twitter,
 };
 

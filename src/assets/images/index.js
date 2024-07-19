@@ -7,14 +7,15 @@ import mass2 from './mass2.png'
 import mass3 from './mass3.png'
 import mass4 from './mass4.png'
 
-import bulkSms from './bulk-sms.png';
-import bulkSms2 from './bulk-sms2.png';
+import bulkSms from './bulk-sms.png'
+import bulkSms2 from './bulk-sms2.png'
 
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
 
-import footerLogo from './footer-logo.svg'
-import headerLogo from './header-logo.svg'
+import footerLogo from './footer-logo.png'
+import headerLogo from './header-logo.png'
+
 
 import offer from './offer.svg'
 
@@ -32,14 +33,7 @@ import thumbnailShoe3 from './thumbnail-shoe3.svg'
 export {
     bigShoe1,
     bigShoe2,
-    bigShoe3,
-
-    mass1,
-    mass2,
-    mass3,
-    mass4,
-
-    bulkSms,
+    bigShoe3, bulkSms,
     bulkSms2,
 
 
@@ -47,9 +41,10 @@ export {
     customer2,
 
     footerLogo,
-    headerLogo,
-
-    offer,
+    headerLogo, mass1,
+    mass2,
+    mass3,
+    mass4, offer,
     shoe4,
     shoe5,
     shoe6,
@@ -61,3 +56,4 @@ export {
     thumbnailShoe2,
     thumbnailShoe3
 }
+

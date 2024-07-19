@@ -1,8 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PopularProductCard = ({ imgURL, name, description }) => {
+
+  const navigate =useNavigate();
+
+  const handleCardClick = () => {
+    console.log("Card clicked");
+    navigate("/services/detail", { state: { imgURL, name, description } });
+  };
+
   return (
     <div
+    onClick={handleCardClick}
       className="relative flex flex-1 flex-col w-full max-sm:w-full hover:border-2
      hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-sm p-2
       hover:cursor-pointer"
