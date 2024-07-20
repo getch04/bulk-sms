@@ -6,6 +6,7 @@ import { navLinks } from "../constants";
 const Nav = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const handleMenuToggle = () => {
     setMenuVisible(!menuVisible);
@@ -13,6 +14,14 @@ const Nav = () => {
 
   const handleMenuItemClick = () => {
     setMenuVisible(false);
+  };
+
+  const handleMouseEnter = () => {
+    setIsDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownVisible(false);
   };
 
   useEffect(() => {
@@ -45,19 +54,72 @@ const Nav = () => {
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item, index) => (
-            <li key={`${item.label}-${index}`}>
+            <li
+              key={`${item.label}-${index}`}
+              onMouseEnter={item.label === "About Us" ? handleMouseEnter : null}
+              onMouseLeave={item.label === "About Us" ? handleMouseLeave : null}
+              className="relative"
+            >
               <a
                 href={item.href}
-                className="font-montserrat text-sm text-gray-500 hover:text-gray-900"
+                className="font-montserrat text-sm text-gray-500 hover:text-gray-900 pb-5"
               >
                 {item.label}
               </a>
+              {item.label === "About Us" && isDropdownVisible && (
+                <ul
+                  className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <li key={"about"}>
+                    <a
+                      href="/about-us"
+                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li key={"faqs"}>
+                    <a
+                      href="/faqs"
+                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
+                    >
+                      FAQs
+                    </a>
+                  </li>
+                  <li key={"how it works"}>
+                    <a
+                      href="/how-it-works"
+                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li key={"privacy policy"}>
+                    <a
+                      href="/privacy-policy"
+                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li key={"payment policy"}>
+                    <a
+                      href="/payment-policy"
+                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
+                    >
+                      Payment Policy
+                    </a>
+                  </li>
+                </ul>
+              )}
             </li>
           ))}
           <div className="rounded-full border-2 border-gray-200 py-2 px-4">
             <li key="login/signup">
               <a
-                href="/login"
+                href="/contact-us"
                 className="font-montserrat text-sm text-gray-500 hover:text-gray-900"
               >
                 Contact Us
@@ -72,6 +134,7 @@ const Nav = () => {
             width={25}
             height={25}
             onClick={handleMenuToggle}
+            className="cursor-pointer"
           />
         </div>
       </nav>
@@ -87,6 +150,7 @@ const Nav = () => {
             width={25}
             height={25}
             onClick={handleMenuToggle}
+            className="cursor-pointer"
           />
         </div>
         <ul className="flex flex-col items-center justify-center h-full gap-4">

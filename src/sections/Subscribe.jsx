@@ -19,13 +19,13 @@ const Subscribe = () => {
 
     <section
       id="contact-us"
-      className="max-container flex  items-center gap-10 p-10"
+      className="max-container flex  items-center gap-10 max-lg:p-3 p-10 max-lg:flex-col"
     >
-      <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold text-center">
+      <h3 className="text-4xl max-lg:text-3xl  lg:max-w-md font-palanquin font-bold text-center">
         Reach us out for <span className="text-coral-red">Inquiries</span> &
         Support
       </h3>
-      <div className="w-full lg:max-w-[50%] flex flex-col gap-5 p-5 rounded-lg bg-gray-50">
+      <div className="w-full flex flex-col gap-5 max-lg:p-2 p-5 rounded-lg bg-gray-50">
         <input
           type="text"
           placeholder="Your Name"

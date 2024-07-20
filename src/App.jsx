@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/services/detail" element={<DetailService />} />
         </Routes>
-        <section className="padding-x bg-black padding-t pb-8">
+        <section className="padding-x bg-black padding-t pb-8 w-full">
           <Footer />
         </section>
         {/* Scroll button to scroll down or up */}
