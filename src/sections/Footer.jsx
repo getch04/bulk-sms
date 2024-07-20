@@ -14,8 +14,8 @@ const Footer = () => {
             </span>
           </a>
           <p className="leading-7 mt-6 text-base font-montserrat text-white-400 sm:max-w-sm">
-            Get ready for any occasion with our Bulk SMS services.
-            Find the perfect solution for your needs.
+            Get ready for any occasion with our Bulk SMS services. Find the
+            perfect solution for your needs.
           </p>
           <div className="flex items-center mt-8 gap-5">
             {socialMedia.map((item, index) => (
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center  text-red-400 mt-10">
         <h4>Developed by </h4>
-        <span> Get soft</span>
+        <span className="pl-1"> Get soft</span>
       </div>
     </footer>
   );
