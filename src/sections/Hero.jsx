@@ -61,7 +61,7 @@ const Hero = () => {
           </span>
           <br />
           <span>in </span>
-          <span className="from-cyan-500 to-blue-500 bg-clip-text text-transparent inline-block mt-3">Seconds</span>
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent inline-block mt-3">Seconds</span>
         </h1>
         <p className=" font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Your Premier Partner for Business Messaging Solutions, Delivering
