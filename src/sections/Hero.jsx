@@ -31,7 +31,7 @@ const Hero = () => {
       max-xl:padding-x
       pt-28"
       >
-        <p className="text-xl font-montserrat text-coral-red">
+        <p className="text-xl font-montserrat bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
           <Typewriter
             words={[
               "All Corner Services",
@@ -61,7 +61,7 @@ const Hero = () => {
           </span>
           <br />
           <span>in </span>
-          <span className="text-coral-red inline-block mt-3">Seconds</span>
+          <span className="from-cyan-500 to-blue-500 bg-clip-text text-transparent inline-block mt-3">Seconds</span>
         </h1>
         <p className=" font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Your Premier Partner for Business Messaging Solutions, Delivering

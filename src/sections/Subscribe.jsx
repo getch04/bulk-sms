@@ -22,8 +22,11 @@ const Subscribe = () => {
       className="max-container flex  w-full items-center gap-10 max-lg:p-3 p-10 max-lg:flex-col"
     >
       <h3 className="text-4xl max-lg:text-3xl  lg:max-w-md font-palanquin font-bold text-center">
-        Reach us out for <span className="text-coral-red">Inquiries</span> &
-        Support
+        Reach us out for{" "}
+        <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+          Inquiries
+        </span>{" "}
+        & Support
       </h3>
       <div className="w-full flex flex-col gap-5 max-lg:p-2 p-5 rounded-lg bg-gray-50">
         <input

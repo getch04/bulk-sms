@@ -11,7 +11,7 @@ const SuperQuality = () => {
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg ">
           We provide you
-          <span className="text-coral-red"> Super Quality </span>SMS Service
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"> Super Quality </span>SMS Service
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
         Delivering premium communication solutions, our meticulously crafted bulk SMS service is designed to elevate your business outreach, providing you with the best messaging quality.

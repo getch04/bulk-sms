@@ -31,7 +31,7 @@ const DetailService = () => {
   const detailsChunks = splitDetails(service.details);
 
   return (
-    <section className="service-detail py-28 px-20 flex max-lg:flex-col justify-evenly items-center">
+    <section className="service-detail py-28 px-20 max-lg:px-10 flex max-lg:flex-col justify-evenly items-center">
       <img
         src={service.imgURL}
         alt={service.name}
@@ -39,8 +39,10 @@ const DetailService = () => {
         width={500}
         className="service-image my-4"
       />
-      <div className="flex flex-col items-start">
-        <h1 className="service-title text-3xl font-bold">{service.name}</h1>
+      <div className="flex flex-col items-start px-32 max-lg:px-0">
+        <h1 className="service-title text-3xl font-bold font-montserrat">
+          {service.name}
+        </h1>
         <p className="service-description text-lg">{service.description}</p>
         <div className="service-full-description text-base">
           {detailsChunks.map((chunk, index) => (

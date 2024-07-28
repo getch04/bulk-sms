@@ -6,7 +6,7 @@ const Popular = () => {
     <section id="services" className="max-container max-sm:mt-12">
       <div className="flex flex-col justify-center items-center gap-5">
         <h2 className="text-4xl font-bold font-palanquin">
-          Our <span className=" text-coral-red"> Popular</span> Services
+          Our <span className=" bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent "> Popular</span> Services
         </h2>
         <p className="text-slate-gray font-montserrat lg:max-w-screen-md text-center mt-2">
           Discover the Most Effective Bulk SMS Services Tailored for Your

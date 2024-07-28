@@ -27,7 +27,7 @@ const ScrollButton = () => {
   return (
     <button
       onClick={scrollToSection}
-      className="fixed right-4 bottom-4 bg-coral-red text-white p-3 rounded-full shadow-lg hover:bg-coral-red-dark transition duration-300 ease-in-out"
+      className="fixed right-4 bottom-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-coral-red-dark transition duration-300 ease-in-out"
     >
       {isAtBottom ? <FaArrowUp size={20} /> : <FaArrowDown size={20} />}
     </button>

@@ -9,7 +9,7 @@ const CustomerReviews = () => {
       <h3 className="font-palanquin text-center text-4xl font-bold">
         What Our
         <span> </span>
-        <span className="text-coral-red">Customers </span>
+        <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Customers </span>
         Say?
       </h3>
       <p className="info-text m-auto mt-4 max-w-lg text-center">

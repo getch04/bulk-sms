@@ -1,13 +1,20 @@
 import React from "react";
+import {
+  FaPhoneAlt,
+  FaSkype,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 import { Subscribe } from "../sections";
-import { FaTelegramPlane, FaSkype, FaWhatsapp } from "react-icons/fa";
 
 function ContactUs() {
   return (
     <section className="py-28 flex flex-col">
       <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-96">
         <div className="flex flex-col justify-center items-center h-full">
-          <div className="flex flex-col items-center mt-8 px-4">
+          <div className="flex flex-col items-center px-4">
+            <FaPhoneAlt className="text-8xl text-white mb-4 " />
             <h2 className="text-3xl font-bold text-white">Contact Us</h2>
             <p className="text-lg text-white mt-4 text-center">
               For all support related issues or to reach our support team,

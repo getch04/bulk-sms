@@ -104,14 +104,14 @@ const Nav = () => {
                       Privacy Policy
                     </a>
                   </li>
-                  <li key={"payment policy"}>
+                  {/* <li key={"payment policy"}>
                     <a
                       href="/payment-policy"
                       className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
                     >
                       Payment Policy
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               )}
             </li>

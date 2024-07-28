@@ -9,6 +9,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Services from "./pages/Services";
+import AboutUs from "./pages/AboutUs";
+import FAQ from "./pages/Faq";
+import HowItWorks from "./pages/HowItWorks";
+import PrivacyPolicy from "./pages/Privacy";
 
 const App = () => {
   return (
@@ -22,10 +26,10 @@ const App = () => {
           <Route path="/services/detail" element={<DetailService />} />
           <Route path="/services" element={<Services />} />
           <Route path="/payment-policy" element={<Services />} />
-          <Route path="/privacy-policy" element={<Services />} />
-          <Route path="/how-it-works" element={<Services />} />
-          <Route path="/faqs" element={<Services />} />
-          <Route path="/about-us" element={<Services />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/faqs" element={<FAQ />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <section className="padding-x bg-black padding-t pb-8 w-full">

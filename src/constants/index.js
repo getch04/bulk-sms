@@ -141,29 +141,29 @@ export const footerLinks = [
   {
     title: "Services",
     links: [
-      { name: "Mass Text Messaging", link: "/" },
-      { name: "Two-Way Messaging", link: "/" },
-      { name: "Automated Scheduling", link: "/" },
-      { name: "Personalized Messaging", link: "/" },
-      { name: "Dedicated Support", link: "/" },
-      { name: "Reliable Delivery", link: "/" },
+      { name: "Mass Text Messaging", link: "" },
+      { name: "Two-Way Messaging", link: "" },
+      { name: "Automated Scheduling", link: "" },
+      { name: "Personalized Messaging", link: "" },
+      { name: "Dedicated Support", link: "" },
+      { name: "Reliable Delivery", link: "" },
     ],
   },
   {
     title: "Help",
     links: [
-      { name: "About us", link: "/" },
-      { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
+      { name: "About us", link: "/about-us" },
+      { name: "FAQs", link: "/faqs" },
+      { name: "How it works", link: "/how-it-works" },
+      { name: "Privacy policy", link: "/privacy-policy" },
+      // { name: "Payment policy", link: "/payment-policy" },
     ],
   },
   {
     title: "Get in touch",
     links: [
-      { name: "customer@sms.com", link: "mailto:customer@sms.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
+      { name: "customer@allcorner.com", link: "mailto:customer@allcorner.com" },
+      { name: "+251973381833", link: "tel:+251973381833" },
     ],
   },
 ];
@@ -173,3 +173,29 @@ export const socialMedia = [
   { src: twitter, alt: "twitter logo" },
   { src: instagram, alt: "instagram logo" },
 ];
+
+
+export const faqData = [
+  {
+    question: "What services does All Corners provide?",
+    answer: "All Corners offers seamless two-way SMS communication services, allowing you to send and receive SMS directly from your internet-enabled computer. Our robust gateway connects to over 800 mobile network operators worldwide."
+  },
+  {
+    question: "How do I get started with All Corners?",
+    answer: "Getting started with All Corners is easy! Simply sign up on our website, choose your desired plan, and start sending and receiving SMS messages immediately."
+  },
+  {
+    question: "What is the cost of your services?",
+    answer: "Our pricing is competitive and varies based on the plan you choose. Visit our pricing page for detailed information on our plans and pricing."
+  },
+  {
+    question: "Is customer support available?",
+    answer: "Yes, we offer 24/7 customer support to assist you with any questions or issues you may have. You can reach our support team through our Help Center."
+  },
+  {
+    question: "How reliable is the All Corners SMS service?",
+    answer: "Our SMS service is highly reliable, with a robust gateway that ensures your messages are delivered promptly. We maintain a 99.9% uptime to guarantee uninterrupted service."
+  }
+  // Add more FAQs as needed
+];
+
