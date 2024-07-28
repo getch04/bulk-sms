@@ -19,7 +19,7 @@ const Subscribe = () => {
 
     <section
       id="contact-us"
-      className="max-container flex  items-center gap-10 max-lg:p-3 p-10 max-lg:flex-col"
+      className="max-container flex  w-full items-center gap-10 max-lg:p-3 p-10 max-lg:flex-col"
     >
       <h3 className="text-4xl max-lg:text-3xl  lg:max-w-md font-palanquin font-bold text-center">
         Reach us out for <span className="text-coral-red">Inquiries</span> &

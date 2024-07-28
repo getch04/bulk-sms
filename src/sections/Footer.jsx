@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="/" className="flex items-center gap-2">
             <img src={footerLogo} alt="logo" width={30} height={29} />
             <span className="font-montserrat text-2xl bg-gradient-to-r from-white-400 to-white bg-clip-text text-transparent">
-              Bulk SMS
+              ALL CORNERS
             </span>
           </a>
           <p className="leading-7 mt-6 text-base font-montserrat text-white-400 sm:max-w-sm">
@@ -66,8 +66,8 @@ const Footer = () => {
         <p className="cursor-pointer font-montserrat">Terms & conditions</p>
       </div>
       <div className="flex justify-center items-center  text-red-400 mt-10">
-        <h4>Developed by </h4>
-        <span className="pl-1"> Get soft</span>
+        <h4>Developed By </h4>
+        <span className="pl-1"> Getahun Honelet</span>
       </div>
     </footer>
   );

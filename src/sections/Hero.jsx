@@ -9,8 +9,15 @@ import { arrowRight } from "../assets/icons";
 import { mass1 } from "../assets/images";
 import { statistics } from "../constants";
 
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(mass1);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact-us");
+  };
 
   return (
     <section
@@ -27,7 +34,7 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">
           <Typewriter
             words={[
-              "Bulk SMS Service",
+              "All Corner Services",
               "The Leading In Town",
               "Affordable Pricing",
               "Reliable and Fast",
@@ -60,8 +67,9 @@ const Hero = () => {
           Your Premier Partner for Business Messaging Solutions, Delivering
           Efficiency and Reach.
         </p>
-        <Button label="Get Started" iconURL={arrowRight} />
-
+        <div onClick={handleClick}>
+          <Button label="Get Started" iconURL={arrowRight} />
+        </div>
         <div
           className="flex  justify-start items-start flex-wrap
        w-full mt-20 gap-16"
