@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaCalendarAlt,
   FaReply,
@@ -98,6 +98,10 @@ const iconComponents = {
 const Services = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleCardClick = (service) => {
     navigate("/services/detail", {
       state: {
@@ -117,7 +121,9 @@ const Services = () => {
           <div className="flex flex-col items-center px-4 text-center">
             <FaTools className="text-8xl text-white mb-4" />{" "}
             {/* Upper icon added */}
-            <h2 className="text-3xl font-montserrat font-bold text-white">Our Services</h2>
+            <h2 className="text-3xl font-montserrat font-bold text-white">
+              Our Services
+            </h2>
             <p className="text-lg text-white mt-4">
               Discover the wide range of services we offer to enhance your
               communication and business outreach.

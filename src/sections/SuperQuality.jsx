@@ -1,8 +1,15 @@
-//import BUTTON component
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { bulkSms2 } from "../assets/images";
 import Button from "../components/Button";
 
 const SuperQuality = () => {
+  const navigate = useNavigate();
+
+  const handleViewDetailsClick = () => {
+    navigate("/services");
+  };
+
   return (
     <section
       id="about-us"
@@ -11,16 +18,21 @@ const SuperQuality = () => {
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg ">
           We provide you
-          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"> Super Quality </span>SMS Service
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+            {" "}
+            Super Quality{" "}
+          </span>
+          SMS Service
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
-        Delivering premium communication solutions, our meticulously crafted bulk SMS service is designed to elevate your business outreach, providing you with the best messaging quality.
+          Delivering premium communication solutions, our meticulously crafted
+          bulk SMS service is designed to elevate your business outreach,
+          providing you with the best messaging quality.
         </p>
-
         <p className="mt-6 info-text lg:max-w-lg">
-        Our dedication to excellence ensures that you get the best service.
+          Our dedication to excellence ensures that you get the best service.
         </p>
-        <div className="mt-11">
+        <div className="mt-11" onClick={handleViewDetailsClick}>
           <Button label="View Details" />
         </div>
       </div>
