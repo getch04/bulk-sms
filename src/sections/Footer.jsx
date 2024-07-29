@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaLinkedin,
-  FaSkype,
-  FaTelegramPlane,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGithub, FaSkype, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks } from "../constants";
@@ -101,14 +96,14 @@ const Footer = () => {
       <div className="flex justify-center items-center text-white-400 mt-10">
         <h4 className="font-semibold">Developed by</h4>
         <a
-          href="https://www.linkedin.com/in/getahun-honelet-a63998186/"
+          href="https://github.com/getch04"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent font-montserrat"
         >
           <span className="font-semibold  ml-2">Getahun Honelet</span>
-          <FaLinkedin className="text-2xl text-white  ml-2" />
+          <FaGithub className="text-2xl text-white  ml-2" />
         </a>
       </div>
     </footer>

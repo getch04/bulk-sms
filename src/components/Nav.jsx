@@ -48,7 +48,7 @@ const Nav = () => {
       <nav className="flex justify-between items-center max-container">
         <a href="/" className="flex items-center gap-2">
           <img src={headerLogo} alt="logo" width={30} height={29} />
-          <span className="font-montserrat text-2xl bg-gradient-to-r from-red-800 to-orange-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent font-montserrat font-extrabold text-3xl">
             ALL CORNERS
           </span>
         </a>
