@@ -1,15 +1,22 @@
-//import Button component
-import Button from "../components/Button";
+// Utility function to format the numbers
+const formatValue = (value) => {
+  const numValue = parseInt(value.replace(/,/g, ""), 10); // Remove commas and parse to integer
+  if (numValue >= 1000000) {
+    return `${Math.floor(numValue / 1000000)}M+`;
+  } else if (numValue >= 1000) {
+    return `${Math.floor(numValue / 1000)}K+`;
+  }
+  return `${numValue}+`;
+};
 
-// import arrowRight image
-import { useState } from "react";
-import CountUp from "react-countup";
+// The Hero component
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { arrowRight } from "../assets/icons";
 import { mass1 } from "../assets/images";
+import Button from "../components/Button";
 import { statistics } from "../constants";
-
-import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(mass1);
@@ -73,14 +80,13 @@ const Hero = () => {
           <Button label="Get Started" iconURL={arrowRight} />
         </div>
         <div
-          className="flex  justify-start items-start flex-wrap
+          className="flex justify-start items-start flex-wrap
        w-full mt-20 gap-16"
         >
           {statistics.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-2">
               <h1 className="text-4xl font-bold font-palanquin">
-                <CountUp end={parseInt(stat.value)} duration={5} />
-                {stat.value.replace(/[0-9]/g, "")}
+                {formatValue(stat.value)}
               </h1>
               <p className=" text-slate-gray leading-7 font-montserrat">
                 {stat.label}

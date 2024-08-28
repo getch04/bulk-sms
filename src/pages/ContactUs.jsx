@@ -5,8 +5,31 @@ import {
   FaTelegramPlane,
   FaWhatsapp,
 } from "react-icons/fa";
-
 import { Subscribe } from "../sections";
+
+const supportContacts = [
+  {
+    name: "Emma",
+    platform: "Telegram",
+    handle: "@tannie5",
+    link: "https://t.me/tannie5",
+    icon: <FaTelegramPlane className="text-blue-500" />,
+  },
+  {
+    name: "Kasahun",
+    platform: "Skype",
+    handle: "live:.cid.749809ce3ea2853c",
+    link: "skype:live:.cid.749809ce3ea2853c?chat",
+    icon: <FaSkype className="text-blue-500" />,
+  },
+  {
+    name: "Support",
+    platform: "WhatsApp",
+    handle: "+251973381833",
+    link: "https://wa.me/251973381833",
+    icon: <FaWhatsapp className="text-green-500" />,
+  },
+];
 
 function ContactUs() {
   return (
@@ -31,61 +54,22 @@ function ContactUs() {
       <div className="flex flex-col items-center mt-8 px-4">
         <h3 className="text-2xl font-bold mb-4">Our Social Media</h3>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
-          <div className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FaTelegramPlane className="text-blue-500 text-2xl mr-3" />
-            <a
-              href="https://t.me/tannie5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+          {supportContacts.map((contact, index) => (
+            <div
+              key={index}
+              className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl"
             >
-              Telegram: @tannie5
-            </a>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FaSkype className="text-blue-500 text-2xl mr-3" />
-            <a
-              href="skype:live:711d0ef9a64fc12?chat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              Skype: live:711d0ef9a64fc12
-            </a>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FaTelegramPlane className="text-blue-500 text-2xl mr-3" />
-            <a
-              href="https://t.me/kasahunnigusu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              Telegram: @kasahunnigusu
-            </a>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FaSkype className="text-blue-500 text-2xl mr-3" />
-            <a
-              href="skype:live:.cid.749809ce3ea2853c?chat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              Skype: live:.cid.749809ce3ea2853c
-            </a>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-lg flex items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FaWhatsapp className="text-blue-500 text-2xl mr-3" />
-            <a
-              href="https://wa.me/251973381833"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              WhatsApp: +251973381833
-            </a>
-          </div>
+              <div className="text-2xl mr-3">{contact.icon}</div>
+              <a
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                {contact.platform}: {contact.handle}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
 

@@ -61,12 +61,12 @@ const AboutUs = () => {
                 className="w-32 h-32 rounded-full mb-4"
               />
               <h4 className="text-xl font-bold" style={{ color: "#1E90FF" }}>
-                Natnael Nigusud
+                Emma Allen
               </h4>
-              <p className="text-gray-600">CEO & Founder</p>
+              <p className="text-gray-600">Team leader</p>
               <p className="text-gray-600 mt-2 text-center">
-                John is the visionary behind our company, leading the team with
-                passion and dedication.
+                Emma is the driving force behind our team, providing strategic
+                direction and inspiring everyone to achieve their best.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
@@ -76,11 +76,12 @@ const AboutUs = () => {
                 className="w-32 h-32 rounded-full mb-4"
               />
               <h4 className="text-xl font-bold" style={{ color: "#1E90FF" }}>
-                Staff Member 1
+                Kasahun Nigusu
               </h4>
-              <p className="text-gray-600">Chief Operating Officer</p>
+              <p className="text-gray-600">Operations Manager</p>
               <p className="text-gray-600 mt-2 text-center">
-                Ensures that our operations run smoothly and efficiently.
+                ensures that our operations are seamless, managing day-to-day
+                activities with precision and efficiency.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
@@ -90,14 +91,14 @@ const AboutUs = () => {
                 className="w-32 h-32 rounded-full mb-4"
               />
               <h4 className="text-xl font-bold" style={{ color: "#1E90FF" }}>
-                Staff Member 2
+                David Nigusu
               </h4>
-              <p className="text-gray-600">Head of Marketing</p>
+              <p className="text-gray-600">Account Manager</p>
               <p className="text-gray-600 mt-2 text-center">
-                Responsible for our marketing strategy and outreach.
+                oversees client relationships, ensuring their needs are met and
+                building long-term partnerships that benefit our business.
               </p>
             </div>
-            {/* Add more team members as needed */}
           </div>
         </section>
       </div>

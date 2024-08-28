@@ -104,20 +104,12 @@ const Nav = () => {
                       Privacy Policy
                     </a>
                   </li>
-                  {/* <li key={"payment policy"}>
-                    <a
-                      href="/payment-policy"
-                      className="block px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
-                    >
-                      Payment Policy
-                    </a>
-                  </li> */}
                 </ul>
               )}
             </li>
           ))}
           <div className="rounded-full border-2 border-gray-200 py-2 px-4">
-            <li key="login/signup">
+            <li key="contact-us-desktop">
               <a
                 href="/contact-us"
                 className="font-montserrat text-sm text-gray-500 hover:text-gray-900"
@@ -165,6 +157,16 @@ const Nav = () => {
               </a>
             </li>
           ))}
+          {/* Add Contact Us in the mobile menu */}
+          <li key="contact-us-mobile" className="w-full text-center">
+            <a
+              href="/contact-us"
+              className="font-montserrat text-lg text-gray-500 hover:text-gray-900 w-full block"
+              onClick={handleMenuItemClick}
+            >
+              Contact Us
+            </a>
+          </li>
         </ul>
       </div>
     </header>

@@ -43,9 +43,9 @@ export const shoes = [
 ];
 
 export const statistics = [
-  { value: "1k+", label: "Customers" },
-  { value: "500+", label: "Campaigns" },
-  { value: "250k+", label: "Message Sent" },
+  { value: "1001", label: "Customers" },
+  { value: "501", label: "Campaigns" },
+  { value: "1000001", label: "Message Sent" },
 ];
 
 export const popularServices = [
@@ -198,4 +198,6 @@ export const faqData = [
   }
   // Add more FAQs as needed
 ];
+
+
 
