@@ -10,8 +10,10 @@ import mass4 from './mass4.png'
 import bulkSms from './bulk-sms.png'
 import bulkSms2 from './bulk-sms2.png'
 
-import customer1 from './customer1.jpeg'
-import customer2 from './customer2.svg'
+import choose1 from './choose1.png'
+import choose2 from './choose2.png'
+import choose3 from './choose3.png'
+import choose4 from './choose4.png'
 
 import footerLogo from './footer-logo.png'
 import headerLogo from './logo.png'
@@ -37,8 +39,11 @@ export {
     bulkSms2,
 
 
-    customer1,
-    customer2,
+ 
+    choose1,
+    choose2,
+    choose3,
+    choose4,
 
     footerLogo,
     headerLogo, mass1,

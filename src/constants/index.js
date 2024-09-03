@@ -10,8 +10,10 @@ import {
   bigShoe1,
   bigShoe2,
   bigShoe3,
-  customer1,
-  customer2,
+  choose1,
+  choose2,
+  choose3,
+  choose4,
   mass1,
   mass2,
   mass3,
@@ -106,34 +108,30 @@ export const services = [
   },
 ];
 
-export const reviews = [
+export const whyChooseUs = [
   {
-    imgURL: customer1,
-    customerName: "Morich Brown",
-    rating: 4.5,
-    feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+    imgURL: choose1,
+    title: "Reliable and Fast Delivery",
+    description:
+      "Our robust infrastructure ensures that your messages are delivered quickly and reliably, reaching your audience within seconds, regardless of their location.",
   },
   {
-    imgURL: customer2,
-    customerName: "Lota Mongeskar",
-    rating: 4.5,
-    feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+    imgURL: choose2,
+    title: "24/7 IT Support",
+    description:
+      "Our round-the-clock IT support team monitors quality, adjusts routes, and provides immediate assistance, ensuring your service remains uninterrupted and efficient.",
   },
   {
-    imgURL: customer1,
-    customerName: "Morich Brown",
-    rating: 4.5,
-    feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+    imgURL: choose3,
+    title: "Advanced Personalization",
+    description:
+      "We offer advanced tools that allow you to personalize your messages for each recipient, enhancing engagement and making your communication feel tailored and relevant.",
   },
   {
-    imgURL: customer2,
-    customerName: "Lota Mongeskar",
-    rating: 4.5,
-    feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+    imgURL: choose4,
+    title: "Professional Expertise",
+    description:
+      "Our team of professionals is equipped with deep industry knowledge, offering expert business discussions, technical interconnection, and top-notch after-sale services.",
   },
 ];
 
@@ -174,30 +172,31 @@ export const socialMedia = [
   { src: instagram, alt: "instagram logo" },
 ];
 
-
 export const faqData = [
   {
     question: "What services does All Corners provide?",
-    answer: "All Corners offers seamless two-way SMS communication services, allowing you to send and receive SMS directly from your internet-enabled computer. Our robust gateway connects to over 800 mobile network operators worldwide."
+    answer:
+      "All Corners offers seamless two-way SMS communication services, allowing you to send and receive SMS directly from your internet-enabled computer. Our robust gateway connects to over 800 mobile network operators worldwide.",
   },
   {
     question: "How do I get started with All Corners?",
-    answer: "Getting started with All Corners is easy! Simply sign up on our website, choose your desired plan, and start sending and receiving SMS messages immediately."
+    answer:
+      "Getting started with All Corners is easy! Simply sign up on our website, choose your desired plan, and start sending and receiving SMS messages immediately.",
   },
   {
     question: "What is the cost of your services?",
-    answer: "Our pricing is competitive and varies based on the plan you choose. Visit our pricing page for detailed information on our plans and pricing."
+    answer:
+      "Our pricing is competitive and varies based on the plan you choose. Visit our pricing page for detailed information on our plans and pricing.",
   },
   {
     question: "Is customer support available?",
-    answer: "Yes, we offer 24/7 customer support to assist you with any questions or issues you may have. You can reach our support team through our Help Center."
+    answer:
+      "Yes, we offer 24/7 customer support to assist you with any questions or issues you may have. You can reach our support team through our Help Center.",
   },
   {
     question: "How reliable is the All Corners SMS service?",
-    answer: "Our SMS service is highly reliable, with a robust gateway that ensures your messages are delivered promptly. We maintain a 99.9% uptime to guarantee uninterrupted service."
-  }
+    answer:
+      "Our SMS service is highly reliable, with a robust gateway that ensures your messages are delivered promptly. We maintain a 99.9% uptime to guarantee uninterrupted service.",
+  },
   // Add more FAQs as needed
 ];
-
-
-

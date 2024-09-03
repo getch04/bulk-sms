@@ -1,5 +1,5 @@
 //import reviews
-import { reviews } from "../constants";
+import { whyChooseUs } from "../constants";
 //import ReviewCard
 import ReviewCard from "../components/ReviewCard";
 
@@ -7,18 +7,18 @@ const CustomerReviews = () => {
   return (
     <section className="max-container">
       <h3 className="font-palanquin text-center text-4xl font-bold">
-        What Our
+        WHY
         <span> </span>
-        <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Customers </span>
-        Say?
+        <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">CHOOSE </span>
+         US?
       </h3>
-      <p className="info-text m-auto mt-4 max-w-lg text-center">
+      {/* <p className="info-text m-auto mt-4 max-w-lg text-center">
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
-      </p>
+      </p> */}
       <div className="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
-        {reviews.map((review) => (
-          <ReviewCard key={review.customerName} review={review} />
+        {whyChooseUs.map((item) => (
+          <ReviewCard key={item.title} item={item} />
         ))}
       </div>
     </section>

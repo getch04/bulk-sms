@@ -1,30 +1,30 @@
 import React from "react";
-import { star } from "../assets/icons";
 
-const ReviewCard = ({ review }) => {
+const ReviewCard = ({ item }) => {
   return (
     <div className="flex justify-center items-center flex-col">
       <img
-        src={review.imgURL}
+        src={item.imgURL}
         alt="customer"
-        className="rounded-full object-cover w-[120px] h-[120px]"
+        className="object-cover w-[260px] h-[160px]"
       />
-      <p className="mt-6 max-w-sm text-center info-text">{review.feedback}</p>
-      <div className="mt-3 flex justify-center items-center gap-2.5">
-        <img
+      <h3 className="mt-1 font-palanquin text-2xl text-center font-bold">
+        {item.title}
+      </h3>
+      <p className="mt-6 max-w-sm text-center info-text">{item.description}</p>
+      {/*  <div className="mt-3 flex justify-center items-center gap-2.5">
+       <img
           src={star}
           alt="star"
           width={24}
           height={24}
           className="object-contain m-0"
         />
-        <p className="text-xl font-montserrat text-slate-gray">
-          {review.rating}
+         <p className="text-xl font-montserrat text-slate-gray">
+          {item.rating}
         </p>
       </div>
-      <h3 className="mt-1 font-palanquin text-3xl text-center font-bold">
-        {review.customerName}
-      </h3>
+*/}
     </div>
   );
 };
