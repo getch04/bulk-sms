@@ -76,7 +76,7 @@ const AboutUs = () => {
                 className="w-32 h-32 rounded-full mb-4"
               />
               <h4 className="text-xl font-bold" style={{ color: "#1E90FF" }}>
-                Kasahun Nigusu
+                Mercy Addisu
               </h4>
               <p className="text-gray-600">Operations Manager</p>
               <p className="text-gray-600 mt-2 text-center">
@@ -91,7 +91,7 @@ const AboutUs = () => {
                 className="w-32 h-32 rounded-full mb-4"
               />
               <h4 className="text-xl font-bold" style={{ color: "#1E90FF" }}>
-                David Nigusu
+                Brandon Sibve
               </h4>
               <p className="text-gray-600">Account Manager</p>
               <p className="text-gray-600 mt-2 text-center">

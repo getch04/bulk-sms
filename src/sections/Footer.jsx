@@ -13,17 +13,10 @@ const supportContacts = [
     icon: <FaTelegramPlane className="text-blue-500" />,
   },
   {
-    name: "Kasahun",
-    platform: "Skype",
-    handle: "live:.cid.749809ce3ea2853c",
-    link: "skype:live:.cid.749809ce3ea2853c?chat",
-    icon: <FaSkype className="text-blue-500" />,
-  },
-  {
     name: "Support",
     platform: "WhatsApp",
-    handle: "+251973381833",
-    link: "https://wa.me/251973381833",
+    handle: "+8613797069064",
+    link: "https://wa.me/8613797069064",
     icon: <FaWhatsapp className="text-green-500" />,
   },
 ];

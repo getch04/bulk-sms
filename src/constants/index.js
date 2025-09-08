@@ -161,7 +161,7 @@ export const footerLinks = [
     title: "Get in touch",
     links: [
       { name: "customer@allcorner.com", link: "mailto:customer@allcorner.com" },
-      { name: "+251973381833", link: "tel:+251973381833" },
+      { name: "+86 137 9706 9064", link: "tel:+8613797069064" },
     ],
   },
 ];
